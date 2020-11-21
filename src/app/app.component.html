@@ -1,0 +1,9 @@
+<div class="container">
+
+  <h2>Mi heroe favorito es: {{ name }}</h2>
+  <app-heroe 
+  [heroes]='heroesList' 
+  (query)="setQuery( $event )"
+  ></app-heroe>
+
+</div>

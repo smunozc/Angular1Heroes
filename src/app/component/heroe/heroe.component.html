@@ -1,0 +1,19 @@
+<div class="card-columns">
+
+    <div *ngFor="let heroe of heroes; let i = index" class="card">
+        <!-- 
+        <figure>
+          <img src="{{ heroe.img }}" class="card-img-top" alt="Heroe Image">
+        </figure> 
+        -->
+        <div class="card-body">
+            <h5 class="card-title">{{ heroe.nombre }}</h5>
+            <div>
+                <span class="badge badge-success">{{ heroe.aparicion }} - {{ heroe.casa }}</span>
+            </div>
+            <p class="card-text"><small class="text-muted">{{ heroe.bio }}</small></p>
+            <button type="button" class="btn btn-primary" (click)="heroSelection(heroe.nombre)">Seleccionar</button>
+        </div>
+    </div>
+
+</div>
